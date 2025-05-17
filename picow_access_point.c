@@ -19,7 +19,7 @@
 #define LED_RED 13
 #define LED_GREEN 11
 #define LED_BLUE 12
-#define BUZZER 10 // NOVO: GPIO do buzzer
+#define BUZZER 10
 
 const uint I2C_SDA = 14;
 const uint I2C_SCL = 15;
@@ -42,7 +42,7 @@ typedef struct TCP_CONNECT_STATE_T_ {
     ip_addr_t *gw;
 } TCP_CONNECT_STATE_T;
 
-// Função para desenhar texto com escala
+// Desenha texto com escala no OLED
 void ssd1306_draw_string_scaled(uint8_t *buffer, int x, int y, const char *text, int scale) {
     while (*text) {
         for (int dx = 0; dx < scale; dx++) {
@@ -55,26 +55,36 @@ void ssd1306_draw_string_scaled(uint8_t *buffer, int x, int y, const char *text,
     }
 }
 
-// Inicializa os LEDs e o buzzer
-void init_leds() {
-    gpio_init(LED_RED);
-    gpio_set_dir(LED_RED, GPIO_OUT);
-    gpio_put(LED_RED, 0);
+// Atualiza o conteúdo do OLED com os estados atuais
+void atualizar_display() {
+    bool r = gpio_get(LED_RED);
+    bool g = gpio_get(LED_GREEN);
+    bool b = gpio_get(LED_BLUE);
+    bool bz = gpio_get(BUZZER);
 
-    gpio_init(LED_GREEN);
-    gpio_set_dir(LED_GREEN, GPIO_OUT);
-    gpio_put(LED_GREEN, 0);
+    memset(ssd, 0, ssd1306_buffer_length);
 
-    gpio_init(LED_BLUE);
-    gpio_set_dir(LED_BLUE, GPIO_OUT);
-    gpio_put(LED_BLUE, 0);
+    char linha1[20], linha2[20], linha3[20], linha4[20];
+    snprintf(linha1, sizeof(linha1), "Vermelho: %s", r ? "ON" : "OFF");
+    snprintf(linha2, sizeof(linha2), "Verde:    %s", g ? "ON" : "OFF");
+    snprintf(linha3, sizeof(linha3), "Azul:     %s", b ? "ON" : "OFF");
+    snprintf(linha4, sizeof(linha4), "Buzzer:   %s", bz ? "ON" : "OFF");
 
-    gpio_init(BUZZER); // NOVO
-    gpio_set_dir(BUZZER, GPIO_OUT);
-    gpio_put(BUZZER, 0);
+    ssd1306_draw_string_scaled(ssd, 0, 0, linha1, 1);
+    ssd1306_draw_string_scaled(ssd, 0, 20, linha2, 1);
+    ssd1306_draw_string_scaled(ssd, 0, 35, linha3, 1);
+    ssd1306_draw_string_scaled(ssd, 0, 50, linha4, 1);
+
+    render_on_display(ssd, &frame_area);
 }
 
-// Processa parâmetros da URL
+void init_leds() {
+    gpio_init(LED_RED);   gpio_set_dir(LED_RED, GPIO_OUT);   gpio_put(LED_RED, 0);
+    gpio_init(LED_GREEN); gpio_set_dir(LED_GREEN, GPIO_OUT); gpio_put(LED_GREEN, 0);
+    gpio_init(LED_BLUE);  gpio_set_dir(LED_BLUE, GPIO_OUT);  gpio_put(LED_BLUE, 0);
+    gpio_init(BUZZER);    gpio_set_dir(BUZZER, GPIO_OUT);    gpio_put(BUZZER, 0);
+}
+
 void parse_params(const char *params) {
     int r, g, b;
     if (sscanf(params, "red=%d&green=%d&blue=%d", &r, &g, &b) == 3) {
@@ -90,17 +100,17 @@ void parse_params(const char *params) {
         if (strstr(params, "blue=0")) gpio_put(LED_BLUE, 0);
     }
 
-    // NOVO: controle do buzzer
     if (strstr(params, "buzzer=1")) gpio_put(BUZZER, 1);
     if (strstr(params, "buzzer=0")) gpio_put(BUZZER, 0);
+
+    atualizar_display(); // Atualiza o display após mudança
 }
 
-// Gera o conteúdo HTML de resposta
 int generate_html(char *result, size_t max_len) {
     bool r = gpio_get(LED_RED);
     bool g = gpio_get(LED_GREEN);
     bool b = gpio_get(LED_BLUE);
-    bool bz = gpio_get(BUZZER); // NOVO
+    bool bz = gpio_get(BUZZER);
 
     return snprintf(result, max_len,
     "<html>"
@@ -167,7 +177,6 @@ int generate_html(char *result, size_t max_len) {
 );
 }
 
-// Trata requisição HTTP
 int handle_request(const char *request, const char *params, char *result, size_t max_len) {
     if (strncmp(request, "/bitdoglabtest", 8) == 0) {
         if (params) parse_params(params);
@@ -185,16 +194,13 @@ err_t tcp_server_recv(void *arg, struct tcp_pcb *pcb, struct pbuf *p, err_t err)
     char *method = strtok(request_line, " ");
     char *url = strtok(NULL, " ");
     char *params = strchr(url, '?');
-    if (params) {
-        *params = 0;
-        params++;
-    }
+    if (params) { *params = 0; params++; }
 
     con_state->result_len = handle_request(url, params, con_state->result, sizeof(con_state->result));
 
-    if (con_state->result_len > 0) {
+    if (con_state->result_len > 0)
         con_state->header_len = snprintf(con_state->headers, sizeof(con_state->headers), HTTP_RESPONSE_HEADERS, con_state->result_len);
-    } else {
+    else {
         con_state->header_len = snprintf(con_state->headers, sizeof(con_state->headers), HTTP_RESPONSE_REDIRECT, ipaddr_ntoa(con_state->gw));
         con_state->result_len = 0;
     }
@@ -248,7 +254,6 @@ int main() {
     cyw43_arch_init();
     stdio_set_chars_available_callback(key_pressed_func, state);
 
-    // Inicializa I2C e display
     i2c_init(i2c1, ssd1306_i2c_clock * 1000);
     gpio_set_function(I2C_SDA, GPIO_FUNC_I2C);
     gpio_set_function(I2C_SCL, GPIO_FUNC_I2C);
@@ -256,39 +261,15 @@ int main() {
     gpio_pull_up(I2C_SCL);
     ssd1306_init();
 
-    // Define área de renderização
     frame_area.start_column = 0;
     frame_area.end_column = ssd1306_width - 1;
     frame_area.start_page = 0;
     frame_area.end_page = ssd1306_n_pages - 1;
     calculate_render_area_buffer_length(&frame_area);
 
-    // Limpa buffer
     memset(ssd, 0, ssd1306_buffer_length);
-
-    // Define escala
-    int scale = 2;
-
-    // Calcula posição horizontal centralizada para ambas as palavras
-    const char *linha1 = "Controle";
-    const char *linha2 = "Wifi";
-
-    int largura_hello = strlen(linha1) * 6 * scale;
-    int largura_world = strlen(linha2) * 6 * scale;
-
-    int pos_x_hello = (ssd1306_width - largura_hello) / 2;
-    int pos_x_world = (ssd1306_width - largura_world) / 2;
-
-    // Define posições Y
-    int pos_y_hello = 10;
-    int pos_y_world = 35;
-
-    // Desenha ambas as palavras
-    ssd1306_draw_string_scaled(ssd, pos_x_hello, pos_y_hello, linha1, scale);
-    ssd1306_draw_string_scaled(ssd, pos_x_world, pos_y_world, linha2, scale);
-
-    // Renderiza no display
-    render_on_display(ssd, &frame_area);
+    
+    atualizar_display();
 
     init_leds();
 
