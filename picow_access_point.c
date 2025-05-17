@@ -8,6 +8,7 @@
 #include "dnsserver.h"
 #include "hardware/i2c.h"
 #include "ssd1306.h"
+#include "pico/time.h"
 
 #define TCP_PORT 80
 #define POLL_TIME_S 5
@@ -15,7 +16,6 @@
 #define HTTP_RESPONSE_HEADERS "HTTP/1.1 200 OK\nContent-Length: %d\nContent-Type: text/html\nConnection: close\n\n"
 #define HTTP_RESPONSE_REDIRECT "HTTP/1.1 302 Found\nLocation: http://%s/bitdoglabtest\n\n"
 
-// GPIOs dos LEDs RGB BitDogLab
 #define LED_RED 13
 #define LED_GREEN 11
 #define LED_BLUE 12
@@ -25,6 +25,11 @@ const uint I2C_SDA = 14;
 const uint I2C_SCL = 15;
 uint8_t ssd[ssd1306_buffer_length];
 struct render_area frame_area;
+
+// Flags e timer do alarme
+volatile bool alarme_ativo = false;
+volatile bool estado_alarme = false;
+repeating_timer_t alarme_timer;
 
 typedef struct TCP_SERVER_T_ {
     struct tcp_pcb *server_pcb;
@@ -42,7 +47,6 @@ typedef struct TCP_CONNECT_STATE_T_ {
     ip_addr_t *gw;
 } TCP_CONNECT_STATE_T;
 
-// Desenha texto com escala no OLED
 void ssd1306_draw_string_scaled(uint8_t *buffer, int x, int y, const char *text, int scale) {
     while (*text) {
         for (int dx = 0; dx < scale; dx++) {
@@ -55,27 +59,41 @@ void ssd1306_draw_string_scaled(uint8_t *buffer, int x, int y, const char *text,
     }
 }
 
-// Atualiza o conteúdo do OLED com os estados atuais
 void atualizar_display() {
-    bool r = gpio_get(LED_RED);
-    bool g = gpio_get(LED_GREEN);
-    bool b = gpio_get(LED_BLUE);
-    bool bz = gpio_get(BUZZER);
-
+    
     memset(ssd, 0, ssd1306_buffer_length);
-
-    char linha1[20], linha2[20], linha3[20], linha4[20];
-    snprintf(linha1, sizeof(linha1), "Vermelho: %s", r ? "ON" : "OFF");
-    snprintf(linha2, sizeof(linha2), "Verde:    %s", g ? "ON" : "OFF");
-    snprintf(linha3, sizeof(linha3), "Azul:     %s", b ? "ON" : "OFF");
-    snprintf(linha4, sizeof(linha4), "Buzzer:   %s", bz ? "ON" : "OFF");
-
-    ssd1306_draw_string_scaled(ssd, 0, 0, linha1, 1);
-    ssd1306_draw_string_scaled(ssd, 0, 20, linha2, 1);
-    ssd1306_draw_string_scaled(ssd, 0, 35, linha3, 1);
-    ssd1306_draw_string_scaled(ssd, 0, 50, linha4, 1);
+    ssd1306_draw_string_scaled(ssd, 0, 0, "IIIIIIIIIIIIIIIIIIIIIIIIIII", 1);
+    ssd1306_draw_string_scaled(ssd, 20, 20, "SISTEMA", 2);
+    ssd1306_draw_string_scaled(ssd, 50, 35, "EM", 2);
+    ssd1306_draw_string_scaled(ssd, 20, 50, "REPOUSO", 2);
+    
 
     render_on_display(ssd, &frame_area);
+}
+
+bool alarme_callback(repeating_timer_t *rt) {
+    if (!alarme_ativo) {
+        gpio_put(LED_RED, 0);
+        gpio_put(BUZZER, 0);
+        return false;
+    }
+
+    estado_alarme = !estado_alarme;
+    gpio_put(LED_RED, estado_alarme);
+    gpio_put(BUZZER, estado_alarme);
+
+    memset(ssd, 0, ssd1306_buffer_length);
+    ssd1306_draw_string_scaled(ssd, 20, 30, "EVACUAR", 2);
+    render_on_display(ssd, &frame_area);
+
+    return true;
+}
+
+void ativar_alarme() {
+    if (!alarme_ativo) {
+        alarme_ativo = true;
+        add_repeating_timer_ms(500, alarme_callback, NULL, &alarme_timer);
+    }
 }
 
 void init_leds() {
@@ -103,77 +121,42 @@ void parse_params(const char *params) {
     if (strstr(params, "buzzer=1")) gpio_put(BUZZER, 1);
     if (strstr(params, "buzzer=0")) gpio_put(BUZZER, 0);
 
-    atualizar_display(); // Atualiza o display após mudança
+    if (strstr(params, "alarme=1")) {
+        ativar_alarme();
+    } else if (strstr(params, "alarme=0")) {
+        alarme_ativo = false;
+        gpio_put(LED_RED, 0);
+        gpio_put(BUZZER, 0);
+        atualizar_display();
+    }
+
+    atualizar_display();
 }
 
 int generate_html(char *result, size_t max_len) {
     bool r = gpio_get(LED_RED);
-    bool g = gpio_get(LED_GREEN);
-    bool b = gpio_get(LED_BLUE);
-    bool bz = gpio_get(BUZZER);
-
-    return snprintf(result, max_len,
+   return snprintf(result, max_len,
     "<html>"
     "<head>"
+    "<meta name='viewport' content='width=device-width, initial-scale=1'>"
     "<style>"
-    "body {"
-    "background-color: #ADD8E6;" /* azul claro */
-    "font-family: Arial, sans-serif;"
-    "text-align: center;"
-    "margin: 0;"
-    "padding: 20px;"
-    "}"
-    "h2 {"
-    "color: #333;"
-    "}"
-    ".status {"
-    "margin: 15px 0;"
-    "font-size: 1.2em;"
-    "}"
-    ".btn {"
-    "background-color: #007BFF;"
-    "color: white;"
-    "border: none;"
-    "padding: 10px 20px;"
-    "margin-top: 5px;"
-    "text-decoration: none;"
-    "border-radius: 5px;"
-    "cursor: pointer;"
-    "font-size: 1em;"
-    "transition: background-color 0.3s;"
-    "}"
-    ".btn:hover {"
-    "background-color: #0056b3;"
-    "}"
+    "body { background-color: #ADD8E6; font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }"
+    "h2 { color: #333; margin-top: 30px; text-align: center; font-size: 1.8em; }"
+    ".status { margin: 20px; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 90%%; max-width: 400px; }"
+    ".btn { display: block; width: 90%%; padding: 15px; margin: 10px 0; font-size: 1.1em; font-weight: bold; border: none; border-radius: 8px; cursor: pointer; transition: 0.3s; }"
+    ".btn-on { background-color: #e74c3c; color: white; }"
+    ".btn-off { background-color: #27ae60; color: white; }"
+    ".btn:hover { opacity: 0.85; }"
     "</style>"
     "</head>"
     "<body>"
-    "<h2>Painel de Controle BitDogLab</h2>"
-
+    "<h2>Alarme</h2>"
     "<div class='status'>"
-    "<p>LED Vermelho: %s</p>"
-    "<a class='btn' href=\"?red=%d\">%s</a>"
+    "<a class='btn btn-on' href='?alarme=1'>Ativar Alarme</a>"
+    "<a class='btn btn-off' href='?alarme=0'>Desligar Alarme</a>"
     "</div>"
-    "<div class='status'>"
-    "<p>LED Verde: %s</p>"
-    "<a class='btn' href=\"?green=%d\">%s</a>"
-    "</div>"
-    "<div class='status'>"
-    "<p>LED Azul: %s</p>"
-    "<a class='btn' href=\"?blue=%d\">%s</a>"
-    "</div>"
-    "<div class='status'>"
-    "<p>Buzzer: %s</p>"
-    "<a class='btn' href=\"?buzzer=%d\">%s</a>"
-    "</div>"
-
     "</body>"
-    "</html>",
-
-    r ? "Ligado" : "Desligado", r ? 0 : 1, r ? "Desligar" : "Ligar",
-    g ? "Ligado" : "Desligado", g ? 0 : 1, g ? "Desligar" : "Ligar",
-    b ? "Ligado" : "Desligado", b ? 0 : 1, b ? "Desligar" : "Ligar",
-    bz ? "Ligado" : "Desligado", bz ? 0 : 1, bz ? "Desligar" : "Ligar"
+    "</html>"
 );
 }
 
@@ -188,27 +171,22 @@ int handle_request(const char *request, const char *params, char *result, size_t
 err_t tcp_server_recv(void *arg, struct tcp_pcb *pcb, struct pbuf *p, err_t err) {
     TCP_CONNECT_STATE_T *con_state = (TCP_CONNECT_STATE_T*)arg;
     if (!p) return tcp_close(pcb);
-
     pbuf_copy_partial(p, con_state->headers, sizeof(con_state->headers) - 1, 0);
     char *request_line = strtok(con_state->headers, "\r\n");
     char *method = strtok(request_line, " ");
     char *url = strtok(NULL, " ");
     char *params = strchr(url, '?');
     if (params) { *params = 0; params++; }
-
     con_state->result_len = handle_request(url, params, con_state->result, sizeof(con_state->result));
-
     if (con_state->result_len > 0)
         con_state->header_len = snprintf(con_state->headers, sizeof(con_state->headers), HTTP_RESPONSE_HEADERS, con_state->result_len);
     else {
         con_state->header_len = snprintf(con_state->headers, sizeof(con_state->headers), HTTP_RESPONSE_REDIRECT, ipaddr_ntoa(con_state->gw));
         con_state->result_len = 0;
     }
-
     con_state->sent_len = 0;
     tcp_write(pcb, con_state->headers, con_state->header_len, 0);
     if (con_state->result_len > 0) tcp_write(pcb, con_state->result, con_state->result_len, 0);
-
     tcp_recved(pcb, p->tot_len);
     pbuf_free(p);
     return tcp_close(pcb);
@@ -228,11 +206,9 @@ static bool tcp_server_open(TCP_SERVER_T *state, const char *ap_name) {
     struct tcp_pcb *pcb = tcp_new_ip_type(IPADDR_TYPE_ANY);
     if (!pcb) return false;
     if (tcp_bind(pcb, IP_ANY_TYPE, TCP_PORT)) return false;
-
     state->server_pcb = tcp_listen_with_backlog(pcb, 1);
     tcp_arg(state->server_pcb, state);
     tcp_accept(state->server_pcb, tcp_server_accept);
-
     printf("Acesse: http://%s/bitdoglabtest\n", ap_name);
     return true;
 }
@@ -268,14 +244,11 @@ int main() {
     calculate_render_area_buffer_length(&frame_area);
 
     memset(ssd, 0, ssd1306_buffer_length);
-    
     atualizar_display();
-
     init_leds();
 
     const char *ap_name = "BitDogLab Wasley";
     const char *password = "12345678";
-
     cyw43_arch_enable_ap_mode(ap_name, password, CYW43_AUTH_WPA2_AES_PSK);
 
     ip4_addr_t mask;

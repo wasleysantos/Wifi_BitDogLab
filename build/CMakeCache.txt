@@ -325,6 +325,15 @@ PICO_STDIO_USB:BOOL=OFF
 Python3_EXECUTABLE:UNINITIALIZED=C:/Users/Wasley/.pico-sdk/python/3.12.6/python.exe
 
 //Value Computed by CMake
+Wifi_Alarme_BINARY_DIR:STATIC=C:/Users/Wasley/Documents/CursoSistemasEmbarcados/Residência Embarcatech/Projetos BitDogLab/2°FASE RESIDENCIA/Wifi_BitDogLab/build
+
+//Value Computed by CMake
+Wifi_Alarme_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Wifi_Alarme_SOURCE_DIR:STATIC=C:/Users/Wasley/Documents/CursoSistemasEmbarcados/Residência Embarcatech/Projetos BitDogLab/2°FASE RESIDENCIA/Wifi_BitDogLab
+
+//Value Computed by CMake
 pico_sdk_BINARY_DIR:STATIC=C:/Users/Wasley/Documents/CursoSistemasEmbarcados/Residência Embarcatech/Projetos BitDogLab/2°FASE RESIDENCIA/Wifi_BitDogLab/build/pico-sdk
 
 //Value Computed by CMake
