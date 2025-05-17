@@ -19,5 +19,8 @@ Este projeto consiste em um sistema embarcado baseado no Raspberry Pi Pico W, qu
 - Configuração do ponto de acesso Wi-Fi (SSID e senha)
 - Configuração fácil para conexão e controle remoto
 
+## Layout da Pagina WEB
+
+![image](https://github.com/user-attachments/assets/40adb7d2-81e2-4534-9c61-8c59ddb7b973)
 
 
