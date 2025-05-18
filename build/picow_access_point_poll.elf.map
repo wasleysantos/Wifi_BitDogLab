@@ -5196,446 +5196,446 @@ LOAD C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/
 .iplt           0x1001a58c        0x0
  .iplt          0x1001a58c        0x0 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x1001a590    0x411d4
+.rodata         0x1001a590    0x411fc
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.alarme_callback.str1.4
-                0x1001a590     0x227e CMakeFiles/picow_access_point_poll.dir/picow_access_point.c.obj
+                0x1001a590     0x22a2 CMakeFiles/picow_access_point_poll.dir/picow_access_point.c.obj
                                   0x8 (size before relaxing)
  .rodata.atualizar_display.str1.4
-                0x1001c80e       0x30 CMakeFiles/picow_access_point_poll.dir/picow_access_point.c.obj
+                0x1001c832       0x30 CMakeFiles/picow_access_point_poll.dir/picow_access_point.c.obj
  .rodata.parse_params.str1.4
-                0x1001c80e       0x75 CMakeFiles/picow_access_point_poll.dir/picow_access_point.c.obj
+                0x1001c832       0x75 CMakeFiles/picow_access_point_poll.dir/picow_access_point.c.obj
  .rodata.tcp_server_recv.str1.4
-                0x1001c80e      0x48f CMakeFiles/picow_access_point_poll.dir/picow_access_point.c.obj
+                0x1001c832      0x4b3 CMakeFiles/picow_access_point_poll.dir/picow_access_point.c.obj
  .rodata.main.str1.4
-                0x1001c80e       0x4d CMakeFiles/picow_access_point_poll.dir/picow_access_point.c.obj
+                0x1001c832       0x4d CMakeFiles/picow_access_point_poll.dir/picow_access_point.c.obj
  .rodata.dhcp_server_process.str1.4
-                0x1001c80e       0x4b CMakeFiles/picow_access_point_poll.dir/dhcpserver/dhcpserver.c.obj
- *fill*         0x1001c80e        0x2 
- .rodata        0x1001c810        0x7 CMakeFiles/picow_access_point_poll.dir/dhcpserver/dhcpserver.c.obj
+                0x1001c832       0x4b CMakeFiles/picow_access_point_poll.dir/dhcpserver/dhcpserver.c.obj
+ *fill*         0x1001c832        0x2 
+ .rodata        0x1001c834        0x7 CMakeFiles/picow_access_point_poll.dir/dhcpserver/dhcpserver.c.obj
  .rodata.dns_server_process.str1.4
-                0x1001c817       0x4c CMakeFiles/picow_access_point_poll.dir/dnsserver/dnsserver.c.obj
+                0x1001c83b       0x4c CMakeFiles/picow_access_point_poll.dir/dnsserver/dnsserver.c.obj
  .rodata.dns_server_init.str1.4
-                0x1001c817       0x22 CMakeFiles/picow_access_point_poll.dir/dnsserver/dnsserver.c.obj
- *fill*         0x1001c817        0x1 
- .rodata.font   0x1001c818      0x128 CMakeFiles/picow_access_point_poll.dir/ssd1306_i2c.c.obj
- .rodata        0x1001c940       0x1a CMakeFiles/picow_access_point_poll.dir/ssd1306_i2c.c.obj
+                0x1001c83b       0x22 CMakeFiles/picow_access_point_poll.dir/dnsserver/dnsserver.c.obj
+ *fill*         0x1001c83b        0x5 
+ .rodata.font   0x1001c840      0x128 CMakeFiles/picow_access_point_poll.dir/ssd1306_i2c.c.obj
+ .rodata        0x1001c968       0x1a CMakeFiles/picow_access_point_poll.dir/ssd1306_i2c.c.obj
  .rodata.panic.str1.4
-                0x1001c95a       0x12 CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_platform_panic/panic.c.obj
- *fill*         0x1001c95a        0x6 
+                0x1001c982       0x12 CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_platform_panic/panic.c.obj
+ *fill*         0x1001c982        0x6 
  .rodata.at_the_end_of_time
-                0x1001c960        0x8 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.obj
-                0x1001c960                at_the_end_of_time
+                0x1001c988        0x8 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.obj
+                0x1001c988                at_the_end_of_time
  .rodata.timer_hardware_alarm_claim.str1.4
-                0x1001c968       0x22 CMakeFiles/picow_access_point_poll.dir/68facaa553a6734d13687344bae9af44/rp2_common/hardware_timer/timer.c.obj
+                0x1001c990       0x22 CMakeFiles/picow_access_point_poll.dir/68facaa553a6734d13687344bae9af44/rp2_common/hardware_timer/timer.c.obj
  .rodata.dns_send.isra.0.str1.4
-                0x1001c968       0x18 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/dns.c.obj
+                0x1001c990       0x18 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/dns.c.obj
  .rodata.dns_check_entry.str1.4
-                0x1001c968       0x1f CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/dns.c.obj
+                0x1001c990       0x1f CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/dns.c.obj
  .rodata.mem_malloc.str1.4
-                0x1001c968       0x24 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/mem.c.obj
+                0x1001c990       0x24 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/mem.c.obj
  .rodata.mem_free.str1.4
-                0x1001c968       0x28 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/mem.c.obj
+                0x1001c990       0x28 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/mem.c.obj
  .rodata.memp_malloc_pool.str1.4
-                0x1001c968       0x37 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x1001c990       0x37 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
  .rodata.memp_free_pool.str1.4
-                0x1001c968       0x20 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x1001c990       0x20 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
  .rodata.memp_pools
-                0x1001c968       0x24 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x1001c968                memp_pools
+                0x1001c990       0x24 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x1001c990                memp_pools
  .rodata.memp_PBUF_POOL
-                0x1001c98c        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x1001c98c                memp_PBUF_POOL
+                0x1001c9b4        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x1001c9b4                memp_PBUF_POOL
  .rodata.memp_PBUF
-                0x1001c998        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x1001c998                memp_PBUF
+                0x1001c9c0        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x1001c9c0                memp_PBUF
  .rodata.memp_SYS_TIMEOUT
-                0x1001c9a4        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x1001c9a4                memp_SYS_TIMEOUT
+                0x1001c9cc        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x1001c9cc                memp_SYS_TIMEOUT
  .rodata.memp_REASSDATA
-                0x1001c9b0        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x1001c9b0                memp_REASSDATA
+                0x1001c9d8        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x1001c9d8                memp_REASSDATA
  .rodata.memp_TCP_SEG
-                0x1001c9bc        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x1001c9bc                memp_TCP_SEG
+                0x1001c9e4        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x1001c9e4                memp_TCP_SEG
  .rodata.memp_TCP_PCB_LISTEN
-                0x1001c9c8        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x1001c9c8                memp_TCP_PCB_LISTEN
+                0x1001c9f0        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x1001c9f0                memp_TCP_PCB_LISTEN
  .rodata.memp_TCP_PCB
-                0x1001c9d4        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x1001c9d4                memp_TCP_PCB
+                0x1001c9fc        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x1001c9fc                memp_TCP_PCB
  .rodata.memp_UDP_PCB
-                0x1001c9e0        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x1001c9e0                memp_UDP_PCB
+                0x1001ca08        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x1001ca08                memp_UDP_PCB
  .rodata.memp_RAW_PCB
-                0x1001c9ec        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x1001c9ec                memp_RAW_PCB
+                0x1001ca14        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x1001ca14                memp_RAW_PCB
  .rodata.netif_do_set_ipaddr.isra.0.str1.4
-                0x1001c9f8       0x10 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/netif.c.obj
+                0x1001ca20       0x10 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/netif.c.obj
  .rodata.netif_add.str1.4
-                0x1001c9f8       0x42 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/netif.c.obj
+                0x1001ca20       0x42 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/netif.c.obj
  .rodata.pbuf_free.part.0.str1.4
-                0x1001c9f8       0x2a CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x1001ca20       0x2a CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.pbuf_alloc.str1.4
-                0x1001c9f8       0x1b CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x1001ca20       0x1b CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.pbuf_realloc.str1.4
-                0x1001c9f8       0x65 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x1001ca20       0x65 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.pbuf_add_header.str1.4
-                0x1001c9f8        0xa CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x1001ca20        0xa CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.pbuf_ref.str1.4
-                0x1001c9f8       0x12 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x1001ca20       0x12 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.pbuf_cat.str1.4
-                0x1001c9f8       0x2d CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x1001ca20       0x2d CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.pbuf_copy_partial_pbuf.str1.4
-                0x1001c9f8       0x33 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x1001ca20       0x33 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.pbuf_take.str1.4
-                0x1001c9f8       0x2e CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x1001ca20       0x2e CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.pbuf_coalesce.str1.4
-                0x1001c9f8       0x11 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x1001ca20       0x11 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.raw_input.str1.4
-                0x1001c9f8       0x49 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/raw.c.obj
+                0x1001ca20       0x49 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/raw.c.obj
  .rodata.tcp_close_shutdown_fin.str1.4
-                0x1001c9f8        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x1001ca20        0xc CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_free.str1.4
-                0x1001c9f8       0x11 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x1001ca20       0x11 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_update_rcv_ann_wnd.str1.4
-                0x1001c9f8       0x3e CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x1001ca20       0x3e CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_recved.str1.4
-                0x1001c9f8       0x26 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x1001ca20       0x26 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_slowtmr.str1.4
-                0x1001c9f8      0x1c6 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x1001ca20      0x1c6 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_seg_copy.str1.4
-                0x1001c9f8       0x1a CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x1001ca20       0x1a CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_recv.str1.4
-                0x1001c9f8       0x27 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x1001ca20       0x27 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_pcb_remove.str1.4
-                0x1001c9f8       0x87 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x1001ca20       0x87 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_abandon.str1.4
-                0x1001c9f8       0x31 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x1001ca20       0x31 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_accept_null.str1.4
-                0x1001c9f8       0x1d CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x1001ca20       0x1d CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_close_shutdown.str1.4
-                0x1001c9f8       0x55 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x1001ca20       0x55 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_next_iss.str1.4
-                0x1001c9f8       0x1a CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x1001ca20       0x1a CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_eff_send_mss_netif.str1.4
-                0x1001c9f8       0x27 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x1001ca20       0x27 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_pcb_lists
-                0x1001c9f8       0x10 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
-                0x1001c9f8                tcp_pcb_lists
+                0x1001ca20       0x10 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x1001ca20                tcp_pcb_lists
  .rodata.tcp_persist_backoff
-                0x1001ca08        0x7 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
- *fill*         0x1001ca0f        0x1 
+                0x1001ca30        0x7 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+ *fill*         0x1001ca37        0x1 
  .rodata.tcp_backoff
-                0x1001ca10        0xd CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x1001ca38        0xd CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_free_acked_segments.isra.0.str1.4
-                0x1001ca1d       0x48 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_in.c.obj
+                0x1001ca45       0x48 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_in.c.obj
  .rodata.tcp_receive.str1.4
-                0x1001ca1d      0x104 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_in.c.obj
+                0x1001ca45      0x104 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_in.c.obj
  .rodata.tcp_input.str1.4
-                0x1001ca1d      0x1de CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_in.c.obj
- *fill*         0x1001ca1d        0x3 
+                0x1001ca45      0x1de CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_in.c.obj
+ *fill*         0x1001ca45        0x3 
  .rodata.tcp_input
-                0x1001ca20       0x28 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_in.c.obj
+                0x1001ca48       0x28 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_in.c.obj
  .rodata.tcp_create_segment.str1.4
-                0x1001ca48       0x35 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x1001ca70       0x35 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_write.str1.4
-                0x1001ca48      0x13e CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x1001ca70      0x13e CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_split_unsent_seg.str1.4
-                0x1001ca48       0x55 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x1001ca70       0x55 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_send_fin.str1.4
-                0x1001ca48       0x88 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x1001ca70       0x88 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_enqueue_flags.str1.4
-                0x1001ca48       0xb1 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x1001ca70       0xb1 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_rexmit_rto_prepare.str1.4
-                0x1001ca48       0x24 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x1001ca70       0x24 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_rexmit.str1.4
-                0x1001ca48       0x18 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x1001ca70       0x18 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_rexmit_fast.str1.4
-                0x1001ca48       0x1d CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x1001ca70       0x1d CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_rst.str1.4
-                0x1001ca48       0x66 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x1001ca70       0x66 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_send_empty_ack.str1.4
-                0x1001ca48       0x20 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x1001ca70       0x20 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_output.str1.4
-                0x1001ca48       0x6b CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x1001ca70       0x6b CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_rexmit_rto_commit.str1.4
-                0x1001ca48       0x23 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x1001ca70       0x23 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_rexmit_rto.str1.4
-                0x1001ca48       0x1c CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x1001ca70       0x1c CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_keepalive.str1.4
-                0x1001ca48       0x1b CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x1001ca70       0x1b CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_zero_window_probe.str1.4
-                0x1001ca48       0x23 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x1001ca70       0x23 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcpip_tcp_timer.str1.4
-                0x1001ca48       0x3d CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/timeouts.c.obj
+                0x1001ca70       0x3d CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/timeouts.c.obj
  .rodata.sys_timeouts_init.str1.4
-                0x1001ca48       0x36 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/timeouts.c.obj
+                0x1001ca70       0x36 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/timeouts.c.obj
  .rodata.lwip_cyclic_timers
-                0x1001ca48       0x30 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/timeouts.c.obj
-                0x1001ca48                lwip_cyclic_timers
+                0x1001ca70       0x30 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/timeouts.c.obj
+                0x1001ca70                lwip_cyclic_timers
  .rodata.udp_input.str1.4
-                0x1001ca78       0x4e CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/udp.c.obj
+                0x1001caa0       0x4e CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/udp.c.obj
  .rodata.udp_sendto_if_src.str1.4
-                0x1001ca78       0x2e CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/udp.c.obj
+                0x1001caa0       0x2e CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/udp.c.obj
  .rodata.dhcp_create_msg.str1.4
-                0x1001ca78       0x40 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+                0x1001caa0       0x40 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
  .rodata.dhcp_inc_pcb_refcount.str1.4
-                0x1001ca78       0x25 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+                0x1001caa0       0x25 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
  .rodata.dhcp_option_hostname.isra.0.str1.4
-                0x1001ca78       0x95 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+                0x1001caa0       0x95 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
  .rodata.dhcp_recv.str1.4
-                0x1001ca78       0x11 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+                0x1001caa0       0x11 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
  .rodata.dhcp_recv
-                0x1001ca78      0x1e0 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+                0x1001caa0      0x1e0 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
  .rodata.dhcp_set_struct.str1.4
-                0x1001cc58       0x44 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+                0x1001cc80       0x44 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
  .rodata.dhcp_start.str1.4
-                0x1001cc58       0x24 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+                0x1001cc80       0x24 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
  .rodata.dhcp_network_changed_link_up.str1.4
-                0x1001cc58       0x14 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+                0x1001cc80       0x14 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
  .rodata.etharp_find_entry.str1.4
-                0x1001cc58       0x41 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/etharp.c.obj
+                0x1001cc80       0x41 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/etharp.c.obj
  .rodata.etharp_raw.str1.4
-                0x1001cc58       0x85 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/etharp.c.obj
+                0x1001cc80       0x85 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/etharp.c.obj
  .rodata.etharp_output_to_arp_index.str1.4
-                0x1001cc58       0x30 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/etharp.c.obj
+                0x1001cc80       0x30 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/etharp.c.obj
  .rodata.etharp_get_entry.str1.4
-                0x1001cc58       0x20 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/etharp.c.obj
+                0x1001cc80       0x20 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/etharp.c.obj
  .rodata.etharp_input.str1.4
-                0x1001cc58       0x24 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/etharp.c.obj
+                0x1001cc80       0x24 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/etharp.c.obj
  .rodata.etharp_query.str1.4
-                0x1001cc58       0x1a CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/etharp.c.obj
+                0x1001cc80       0x1a CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/etharp.c.obj
  .rodata.etharp_output.str1.4
-                0x1001cc58        0xa CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/etharp.c.obj
+                0x1001cc80        0xa CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/etharp.c.obj
  .rodata.icmp_input.str1.4
-                0x1001cc58       0x65 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/icmp.c.obj
+                0x1001cc80       0x65 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/icmp.c.obj
  .rodata.icmp_dest_unreach.str1.4
-                0x1001cc58       0x2c CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/icmp.c.obj
+                0x1001cc80       0x2c CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/icmp.c.obj
  .rodata.ip_reass_free_complete_datagram.str1.4
-                0x1001cc58       0x7e CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/ip4_frag.c.obj
+                0x1001cc80       0x7e CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/ip4_frag.c.obj
  .rodata.ip4_reass.str1.4
-                0x1001cc58       0x70 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/ip4_frag.c.obj
+                0x1001cc80       0x70 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/ip4_frag.c.obj
  .rodata.ip4_frag.str1.4
-                0x1001cc58       0x20 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/ip4_frag.c.obj
+                0x1001cc80       0x20 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/ip4_frag.c.obj
  .rodata.ip4_output_if.str1.4
-                0x1001cc58       0x39 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4.c.obj
+                0x1001cc80       0x39 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4.c.obj
  .rodata.ip_addr_broadcast
-                0x1001cc58        0x4 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/ip4_addr.c.obj
-                0x1001cc58                ip_addr_broadcast
+                0x1001cc80        0x4 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/ip4_addr.c.obj
+                0x1001cc80                ip_addr_broadcast
  .rodata.ip_addr_any
-                0x1001cc5c        0x4 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/ip4_addr.c.obj
-                0x1001cc5c                ip_addr_any
+                0x1001cc84        0x4 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/ip4_addr.c.obj
+                0x1001cc84                ip_addr_any
  .rodata.ethernet_output.str1.4
-                0x1001cc60       0x31 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ethernet.c.obj
+                0x1001cc88       0x31 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ethernet.c.obj
  .rodata.ethzero
-                0x1001cc60        0x6 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ethernet.c.obj
-                0x1001cc60                ethzero
- *fill*         0x1001cc66        0x2 
+                0x1001cc88        0x6 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ethernet.c.obj
+                0x1001cc88                ethzero
+ *fill*         0x1001cc8e        0x2 
  .rodata.ethbroadcast
-                0x1001cc68        0x6 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ethernet.c.obj
-                0x1001cc68                ethbroadcast
+                0x1001cc90        0x6 CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ethernet.c.obj
+                0x1001cc90                ethbroadcast
  .rodata.cyw43_read_bytes.str1.4
-                0x1001cc6e       0x1a CMakeFiles/picow_access_point_poll.dir/23c541754eddb0fcaefa38bde3d2750a/cyw43_bus_pio_spi.c.obj
+                0x1001cc96       0x1a CMakeFiles/picow_access_point_poll.dir/23c541754eddb0fcaefa38bde3d2750a/cyw43_bus_pio_spi.c.obj
  .rodata.cyw43_write_bytes.str1.4
-                0x1001cc6e        0xd CMakeFiles/picow_access_point_poll.dir/23c541754eddb0fcaefa38bde3d2750a/cyw43_bus_pio_spi.c.obj
- *fill*         0x1001cc6e        0x2 
+                0x1001cc96        0xd CMakeFiles/picow_access_point_poll.dir/23c541754eddb0fcaefa38bde3d2750a/cyw43_bus_pio_spi.c.obj
+ *fill*         0x1001cc96        0x2 
  .rodata.spi_gap01_sample0_program
-                0x1001cc70        0x8 CMakeFiles/picow_access_point_poll.dir/23c541754eddb0fcaefa38bde3d2750a/cyw43_bus_pio_spi.c.obj
+                0x1001cc98        0x8 CMakeFiles/picow_access_point_poll.dir/23c541754eddb0fcaefa38bde3d2750a/cyw43_bus_pio_spi.c.obj
  .rodata.spi_gap01_sample0_program_instructions
-                0x1001cc78        0xc CMakeFiles/picow_access_point_poll.dir/23c541754eddb0fcaefa38bde3d2750a/cyw43_bus_pio_spi.c.obj
+                0x1001cca0        0xc CMakeFiles/picow_access_point_poll.dir/23c541754eddb0fcaefa38bde3d2750a/cyw43_bus_pio_spi.c.obj
  .rodata.cyw43_kso_set.str1.4
-                0x1001cc84       0x23 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x1001ccac       0x23 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_ll_sdpcm_poll_device.str1.4
-                0x1001cc84       0x55 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x1001ccac       0x55 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_sdpcm_send_common.str1.4
-                0x1001cc84       0x22 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x1001ccac       0x22 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_do_ioctl.part.0.str1.4
-                0x1001cc84       0x53 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x1001ccac       0x53 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.reset_device_core.constprop.0.str1.4
-                0x1001cc84       0x1a CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x1001ccac       0x1a CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_ll_wifi_on.str1.4
-                0x1001cc84       0x52 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x1001ccac       0x52 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_ll_bus_init.str1.4
-                0x1001cc84       0xea CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x1001ccac       0xea CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_ll_wifi_pm.str1.4
-                0x1001cc84       0x35 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x1001ccac       0x35 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_ll_wifi_join.str1.4
-                0x1001cc84       0x55 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x1001ccac       0x55 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_ll_wifi_ap_init.str1.4
-                0x1001cc84       0x45 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x1001ccac       0x45 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_ll_wifi_ap_set_up.str1.4
-                0x1001cc84        0x4 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x1001ccac        0x4 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.w43439A0_7_95_49_00_combined
-                0x1001cc84    0x36fd8 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x1001ccac    0x36fd8 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.wifi_nvram_4343
-                0x10053c5c      0x2e7 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
- *fill*         0x10053f43        0x1 
- .rodata        0x10053f44       0x72 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10053c84      0x2e7 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
+ *fill*         0x10053f6b        0x1 
+ .rodata        0x10053f6c       0x72 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_netif_output.str1.4
-                0x10053fb6       0x22 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_lwip.c.obj
+                0x10053fde       0x22 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_lwip.c.obj
  .rodata.cyw43_cb_tcpip_init.str1.4
-                0x10053fb6        0x6 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_lwip.c.obj
+                0x10053fde        0x6 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_lwip.c.obj
  .rodata.cyw43_cb_process_async_event.str1.4
-                0x10053fb6       0x28 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ctrl.c.obj
- *fill*         0x10053fb6        0x2 
+                0x10053fde       0x28 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+ *fill*         0x10053fde        0x2 
  .rodata.cyw43_cb_process_async_event
-                0x10053fb8       0xc8 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+                0x10053fe0       0xc8 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ctrl.c.obj
  .rodata.str1.4
-                0x10054080       0x9e CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+                0x100540a8       0x9e CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ctrl.c.obj
  .rodata.cyw43_async_event_name_table
-                0x10054080      0x164 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+                0x100540a8      0x164 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/lib/cyw43-driver/src/cyw43_ctrl.c.obj
  .rodata.pio_claim_unused_sm.str1.4
-                0x100541e4       0x24 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/src/rp2_common/hardware_pio/pio.c.obj
+                0x1005420c       0x24 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/src/rp2_common/hardware_pio/pio.c.obj
  .rodata.dma_claim_unused_channel.str1.4
-                0x100541e4       0x1e CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/src/rp2_common/hardware_dma/dma.c.obj
+                0x1005420c       0x1e CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/src/rp2_common/hardware_dma/dma.c.obj
  .rodata.async_context_poll_lock_check.str1.4
-                0x100541e4       0x3c CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_async_context/async_context_poll.c.obj
+                0x1005420c       0x3c CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_async_context/async_context_poll.c.obj
  .rodata.template
-                0x100541e4       0x38 CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_async_context/async_context_poll.c.obj
+                0x1005420c       0x38 CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_async_context/async_context_poll.c.obj
  .rodata.hard_assertion_failure.str1.4
-                0x1005421c        0xc CMakeFiles/picow_access_point_poll.dir/68facaa553a6734d13687344bae9af44/rp2_common/pico_runtime/runtime.c.obj
+                0x10054244        0xc CMakeFiles/picow_access_point_poll.dir/68facaa553a6734d13687344bae9af44/rp2_common/pico_runtime/runtime.c.obj
  .rodata.missing_double_func_shim.str1.4
-                0x1005421c       0x18 CMakeFiles/picow_access_point_poll.dir/fdfd8b12d158018f9ed7de8c6f0e037f/double_init_rom_rp2040.c.obj
+                0x10054244       0x18 CMakeFiles/picow_access_point_poll.dir/fdfd8b12d158018f9ed7de8c6f0e037f/double_init_rom_rp2040.c.obj
  .rodata.missing_float_func_shim.str1.4
-                0x1005421c        0x1 CMakeFiles/picow_access_point_poll.dir/be899572fcf3ac9c0977d7a1cee7e57c/float_init_rom_rp2040.c.obj
+                0x10054244        0x1 CMakeFiles/picow_access_point_poll.dir/be899572fcf3ac9c0977d7a1cee7e57c/float_init_rom_rp2040.c.obj
  .rodata.__wrap_malloc.str1.4
-                0x1005421c        0xe CMakeFiles/picow_access_point_poll.dir/68facaa553a6734d13687344bae9af44/rp2_common/pico_malloc/malloc.c.obj
+                0x10054244        0xe CMakeFiles/picow_access_point_poll.dir/68facaa553a6734d13687344bae9af44/rp2_common/pico_malloc/malloc.c.obj
  .rodata.str1.4
-                0x1005421c       0x4c CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
+                0x10054244       0x4c CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
  .rodata.__bi_84
-                0x1005421c        0xc CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
+                0x10054244        0xc CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
  .rodata.__bi_78
-                0x10054228        0xc CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
+                0x10054250        0xc CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
  .rodata.__bi_54
-                0x10054234        0xc CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
+                0x1005425c        0xc CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
  .rodata.__bi_48
-                0x10054240        0xc CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
+                0x10054268        0xc CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
  .rodata.__bi_42
-                0x1005424c        0xc CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
+                0x10054274        0xc CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
  .rodata.__bi_34
-                0x10054258        0xc CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
+                0x10054280        0xc CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
  .rodata.__bi_26
-                0x10054264        0xc CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
+                0x1005428c        0xc CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
  .rodata._ftoa.str1.4
-                0x10054270       0x15 CMakeFiles/picow_access_point_poll.dir/68facaa553a6734d13687344bae9af44/rp2_common/pico_printf/printf.c.obj
+                0x10054298       0x15 CMakeFiles/picow_access_point_poll.dir/68facaa553a6734d13687344bae9af44/rp2_common/pico_printf/printf.c.obj
  .rodata._vsnprintf
-                0x10054270      0x19c CMakeFiles/picow_access_point_poll.dir/68facaa553a6734d13687344bae9af44/rp2_common/pico_printf/printf.c.obj
- *fill*         0x1005440c        0x4 
+                0x10054298      0x19c CMakeFiles/picow_access_point_poll.dir/68facaa553a6734d13687344bae9af44/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x10054434        0x4 
  .rodata.pow10.0
-                0x10054410       0x50 CMakeFiles/picow_access_point_poll.dir/68facaa553a6734d13687344bae9af44/rp2_common/pico_printf/printf.c.obj
+                0x10054438       0x50 CMakeFiles/picow_access_point_poll.dir/68facaa553a6734d13687344bae9af44/rp2_common/pico_printf/printf.c.obj
  .rodata.__assert_func.str1.4
-                0x10054460       0x43 CMakeFiles/picow_access_point_poll.dir/2f7f93335db3e130da8a45c859b992b4/newlib_interface.c.obj
+                0x10054488       0x43 CMakeFiles/picow_access_point_poll.dir/2f7f93335db3e130da8a45c859b992b4/newlib_interface.c.obj
  .rodata.crlf_str.0
-                0x10054460        0x2 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10054488        0x2 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/src/rp2_common/pico_stdio/stdio.c.obj
  .rodata.str1.4
-                0x10054462       0x2c CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_stdio_uart/stdio_uart.c.obj
- *fill*         0x10054462        0x2 
+                0x1005448a       0x2c CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_stdio_uart/stdio_uart.c.obj
+ *fill*         0x1005448a        0x2 
  .rodata.__bi_45.4
-                0x10054464        0xc CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_stdio_uart/stdio_uart.c.obj
+                0x1005448c        0xc CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_49.5
-                0x10054470        0x8 CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_stdio_uart/stdio_uart.c.obj
+                0x10054498        0x8 CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_50.6
-                0x10054478        0x8 CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_stdio_uart/stdio_uart.c.obj
+                0x100544a0        0x8 CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_stdio_uart/stdio_uart.c.obj
  .rodata._ctype_
-                0x10054480      0x101 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-ctype_.o)
-                0x10054480                _ctype_
+                0x100544a8      0x101 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-ctype_.o)
+                0x100544a8                _ctype_
  .rodata.__ssvfscanf_r.str1.4
-                0x10054581        0x9 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-svfscanf.o)
- *fill*         0x10054581        0x3 
+                0x100545a9        0x9 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-svfscanf.o)
+ *fill*         0x100545a9        0x3 
  .rodata.__ssvfscanf_r
-                0x10054584      0x3cc C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-svfscanf.o)
+                0x100545ac      0x3cc C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-svfscanf.o)
  .rodata.basefix.0
-                0x10054950       0x22 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-svfscanf.o)
+                0x10054978       0x22 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-svfscanf.o)
  .rodata.str1.4
-                0x10054972       0x4c C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-locale.o)
+                0x1005499a       0x4c C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-locale.o)
  .rodata._strtod_l.str1.4
-                0x10054972       0x15 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-strtod.o)
- *fill*         0x10054972        0x2 
+                0x1005499a       0x15 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-strtod.o)
+ *fill*         0x1005499a        0x2 
  .rodata._strtod_l
-                0x10054974       0xd0 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-strtod.o)
+                0x1005499c       0xd0 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-strtod.o)
  .rodata.fpinan.0
-                0x10054a44       0x14 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-strtod.o)
- .rodata.fpi.1  0x10054a58       0x14 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-strtod.o)
- *fill*         0x10054a6c        0x4 
+                0x10054a6c       0x14 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-strtod.o)
+ .rodata.fpi.1  0x10054a80       0x14 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-strtod.o)
+ *fill*         0x10054a94        0x4 
  .rodata.tinytens
-                0x10054a70       0x28 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-strtod.o)
+                0x10054a98       0x28 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-strtod.o)
  .rodata._mbrtowc_r.str1.4
-                0x10054a98        0x1 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-mbrtowc.o)
+                0x10054ac0        0x1 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-mbrtowc.o)
  .rodata.__jp2uc
-                0x10054a98       0x20 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
+                0x10054ac0       0x20 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
  .rodata._jp2uc_l.str1.4
-                0x10054ab8       0x12 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
- .rodata.d02f4  0x10054ab8     0x1a7c C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
- .rodata.b02cf  0x10056534     0x172a C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
- *fill*         0x10057c5e        0x2 
- .rodata.a8     0x10057c60       0x40 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
- .rodata.a7     0x10057ca0       0xa2 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
- *fill*         0x10057d42        0x2 
- .rodata.a6     0x10057d44       0x70 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
- .rodata.a3     0x10057db4       0x5b C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
- *fill*         0x10057e0f        0x1 
- .rodata.a2     0x10057e10       0xbc C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
- .rodata.a1     0x10057ecc       0xbc C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
+                0x10054ae0       0x12 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
+ .rodata.d02f4  0x10054ae0     0x1a7c C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
+ .rodata.b02cf  0x1005655c     0x172a C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
+ *fill*         0x10057c86        0x2 
+ .rodata.a8     0x10057c88       0x40 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
+ .rodata.a7     0x10057cc8       0xa2 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
+ *fill*         0x10057d6a        0x2 
+ .rodata.a6     0x10057d6c       0x70 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
+ .rodata.a3     0x10057ddc       0x5b C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
+ *fill*         0x10057e37        0x1 
+ .rodata.a2     0x10057e38       0xbc C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
+ .rodata.a1     0x10057ef4       0xbc C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-jp2uc.o)
  .rodata.__gethex.str1.4
-                0x10057f88       0x79 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-gdtoa-gethex.o)
+                0x10057fb0       0x79 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-gdtoa-gethex.o)
  .rodata.__hexdig
-                0x10057f88      0x100 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-gdtoa-gethex.o)
-                0x10057f88                __hexdig
+                0x10057fb0      0x100 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-gdtoa-gethex.o)
+                0x10057fb0                __hexdig
  .rodata.__multadd.str1.4
-                0x10058088       0x6e C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-mprec.o)
- .rodata.p05.0  0x10058088        0xc C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-mprec.o)
- *fill*         0x10058094        0x4 
+                0x100580b0       0x6e C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-mprec.o)
+ .rodata.p05.0  0x100580b0        0xc C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-mprec.o)
+ *fill*         0x100580bc        0x4 
  .rodata.__mprec_bigtens
-                0x10058098       0x28 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-mprec.o)
-                0x10058098                __mprec_bigtens
+                0x100580c0       0x28 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-mprec.o)
+                0x100580c0                __mprec_bigtens
  .rodata.__mprec_tens
-                0x100580c0       0xc8 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-mprec.o)
-                0x100580c0                __mprec_tens
+                0x100580e8       0xc8 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-mprec.o)
+                0x100580e8                __mprec_tens
  .rodata.categories
-                0x10058188     0x35dc C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-categories.o)
-                0x1005b764                        . = ALIGN (0x4)
+                0x100581b0     0x35dc C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-categories.o)
+                0x1005b78c                        . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x1005b764                        . = ALIGN (0x4)
+                0x1005b78c                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x1005b764                        __exidx_start = .
+                0x1005b78c                        __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x1005b764                        __exidx_end = .
-                0x1005b764                        . = ALIGN (0x4)
-                0x1005b764                        __binary_info_start = .
+                0x1005b78c                        __exidx_end = .
+                0x1005b78c                        . = ALIGN (0x4)
+                0x1005b78c                        __binary_info_start = .
 
-.binary_info    0x1005b764       0x28
+.binary_info    0x1005b78c       0x28
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr84
-                0x1005b764        0x4 CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
+                0x1005b78c        0x4 CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr78
-                0x1005b768        0x4 CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
+                0x1005b790        0x4 CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr54
-                0x1005b76c        0x4 CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
+                0x1005b794        0x4 CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr48
-                0x1005b770        0x4 CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
+                0x1005b798        0x4 CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr42
-                0x1005b774        0x4 CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
+                0x1005b79c        0x4 CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr34
-                0x1005b778        0x4 CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
+                0x1005b7a0        0x4 CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr26
-                0x1005b77c        0x4 CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
+                0x1005b7a4        0x4 CMakeFiles/picow_access_point_poll.dir/8d2de90e1d02f59b8033a67a40fe3232/standard_binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr50
-                0x1005b780        0x4 CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_stdio_uart/stdio_uart.c.obj
+                0x1005b7a8        0x4 CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr49
-                0x1005b784        0x4 CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_stdio_uart/stdio_uart.c.obj
+                0x1005b7ac        0x4 CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr45
-                0x1005b788        0x4 CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_stdio_uart/stdio_uart.c.obj
-                0x1005b78c                        __binary_info_end = .
+                0x1005b7b0        0x4 CMakeFiles/picow_access_point_poll.dir/c107034687c0993b5a865fece4371777/pico_stdio_uart/stdio_uart.c.obj
+                0x1005b7b4                        __binary_info_end = .
 
-.rel.dyn        0x1005b78c        0x0
- .rel.iplt      0x1005b78c        0x0 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x1005b78c                        . = ALIGN (0x4)
+.rel.dyn        0x1005b7b4        0x0
+ .rel.iplt      0x1005b7b4        0x0 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x1005b7b4                        . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -5655,7 +5655,7 @@ LOAD C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/
  .uninitialized_data.rng_state
                 0x200000d0       0x10 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/src/rp2_common/pico_rand/rand.c.obj
 
-.data           0x200000e0      0xb04 load address 0x1005b78c
+.data           0x200000e0      0xb04 load address 0x1005b7b4
                 0x200000e0                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -5763,23 +5763,23 @@ LOAD C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/
                 0x20000be4                        . = ALIGN (0x4)
 
 .tm_clone_table
-                0x20000be4        0x0 load address 0x1005c290
+                0x20000be4        0x0 load address 0x1005c2b8
  .tm_clone_table
                 0x20000be4        0x0 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000be4        0x0 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x20000be4        0x0 load address 0x1005c290
+.igot.plt       0x20000be4        0x0 load address 0x1005c2b8
  .igot.plt      0x20000be4        0x0 C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.tdata          0x20000be4        0x0 load address 0x1005c290
+.tdata          0x20000be4        0x0 load address 0x1005c2b8
                 0x20000be4                        . = ALIGN (0x4)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x20000be4                        __tdata_end = .
                 0x20000be4                        PROVIDE (__data_end__ = .)
-                0x1005b78c                        __etext = LOADADDR (.data)
+                0x1005b7b4                        __etext = LOADADDR (.data)
 
-.tbss           0x20000be4        0x0 load address 0x1005c290
+.tbss           0x20000be4        0x0 load address 0x1005c2b8
                 0x20000be4                        . = ALIGN (0x4)
                 0x20000be4                        __bss_start__ = .
                 0x20000be4                        __tls_base = .
@@ -5787,7 +5787,7 @@ LOAD C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/
  *(.tcommon)
                 0x20000be4                        __tls_end = .
 
-.bss            0x20000be8     0xb474 load address 0x1005c290
+.bss            0x20000be8     0xb474 load address 0x1005c2b8
                 0x20000be8                        . = ALIGN (0x4)
                 0x20000be8                        __tbss_end = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -6056,26 +6056,26 @@ LOAD C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/
  *fill*         0x2000c05b        0x1 
                 0x2000c05c                        __bss_end__ = .
 
-.heap           0x2000c05c      0x800 load address 0x1005c290
+.heap           0x2000c05c      0x800 load address 0x1005c2b8
                 0x2000c05c                        __end__ = .
                 0x2000c05c                        end = __end__
  *(.heap*)
  .heap          0x2000c05c      0x800 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/src/rp2_common/pico_crt0/crt0.S.obj
                 0x20040000                        __HeapLimit = (ORIGIN (RAM) + LENGTH (RAM))
 
-.scratch_x      0x20040000        0x0 load address 0x1005c290
+.scratch_x      0x20040000        0x0 load address 0x1005c2b8
                 0x20040000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                        . = ALIGN (0x4)
                 0x20040000                        __scratch_x_end__ = .
-                0x1005c290                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x1005c2b8                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x1005c290
+.scratch_y      0x20041000        0x0 load address 0x1005c2b8
                 0x20041000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                        . = ALIGN (0x4)
                 0x20041000                        __scratch_y_end__ = .
-                0x1005c290                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x1005c2b8                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .stack1_dummy
  *(.stack1*)
@@ -6084,9 +6084,9 @@ LOAD C:/Users/Wasley/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/src/rp2_common/pico_crt0/crt0.S.obj
 
-.flash_end      0x1005c290        0x0
+.flash_end      0x1005c2b8        0x0
  *(.embedded_end_block*)
-                0x1005c290                        PROVIDE (__flash_binary_end = .)
+                0x1005c2b8                        PROVIDE (__flash_binary_end = .)
                 0x20040000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
