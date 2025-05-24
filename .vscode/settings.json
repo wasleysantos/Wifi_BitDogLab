@@ -37,6 +37,9 @@
   "raspberry-pi-pico.cmakePath": "${HOME}/.pico-sdk/cmake/v3.31.5/bin/cmake",
   "raspberry-pi-pico.ninjaPath": "${HOME}/.pico-sdk/ninja/v1.12.1/ninja",
   "files.associations": {
-    "i2c.h": "c"
+    "dhcpserver.h": "c",
+    "time.h": "c",
+    "i2c.h": "c",
+    "cyw43_arch.h": "c"
   }
 }
