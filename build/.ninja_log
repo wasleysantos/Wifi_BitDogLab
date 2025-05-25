@@ -1,13 +1,13 @@
 # ninja log v6
 9566	10666	7692023111365396	CMakeFiles/picow_access_point_background.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/altcp_tcp.c.obj	60725e065220540b
 291	547	7697556394072864	pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj	b05906c0521c62c
-53155	54540	7692023547249179	CMakeFiles/picow_access_point_poll.dir/cd1ecb54730339c38b535292f6d159b3/async_context_poll.c.obj	8d06dcc597799224
-1872	2877	7691933851662690	CMakeFiles/picow_access_point_background.dir/f28c238e21a8d7a415328780295072c0/src/rp2_common/hardware_timer/timer.c.obj	999a5397adf63e5
-196	1751	7697560244711738	CMakeFiles/picow_access_point_background.dir/dnsserver/dnsserver.c.obj	f75349ede8636c3b
 626	1341	7691933839170609	CMakeFiles/picow_access_point_background.dir/68facaa553a6734d13687344bae9af44/rp2_common/pico_unique_id/unique_id.c.obj	771e9fb95196c634
+196	1751	7697560244711738	CMakeFiles/picow_access_point_background.dir/dnsserver/dnsserver.c.obj	f75349ede8636c3b
+239	881	7692026503316125	pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h	72a276f09c4a314e
 10956	12081	7697560352309561	CMakeFiles/picow_access_point_background.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/bridgeif.c.obj	78225a5608fef812
 9374	10314	7691933926751479	CMakeFiles/picow_access_point_background.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/lowpan6_ble.c.obj	8eedcb75066b1cc6
-239	881	7692026503316125	pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h	72a276f09c4a314e
+53155	54540	7692023547249179	CMakeFiles/picow_access_point_poll.dir/cd1ecb54730339c38b535292f6d159b3/async_context_poll.c.obj	8d06dcc597799224
+1872	2877	7691933851662690	CMakeFiles/picow_access_point_background.dir/f28c238e21a8d7a415328780295072c0/src/rp2_common/hardware_timer/timer.c.obj	999a5397adf63e5
 4892	6658	7697560291998876	CMakeFiles/picow_access_point_background.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/netif.c.obj	4313b34949877bea
 12043	12960	7697567551347547	CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ppp/auth.c.obj	56a522cdb1971fb
 1003	1143	7697556402429228	pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S	f22a5a85b4cbce49
@@ -62,8 +62,8 @@
 158	2125	7697567432497601	CMakeFiles/picow_access_point_background.dir/picow_access_point.c.obj	27448c3b792d89a2
 15843	16606	7691933991310510	CMakeFiles/picow_access_point_background.dir/c107034687c0993b5a865fece4371777/pico_float/float_init_rom_rp2040.c.obj	e764571186ca80c1
 19416	20102	7691934027038041	CMakeFiles/picow_access_point_poll.dir/f28c238e21a8d7a415328780295072c0/src/common/pico_time/timeout_helper.c.obj	635d6c7a0b7833ba
-32602	33616	7691934158916048	CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.obj	1316efb22785dfa0
 8930	9816	7697560332110712	CMakeFiles/picow_access_point_background.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv6/ethip6.c.obj	3b8bc1180d23427a
+32602	33616	7691934158916048	CMakeFiles/picow_access_point_poll.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.obj	1316efb22785dfa0
 1706	2825	7697560260134543	CMakeFiles/picow_access_point_background.dir/c107034687c0993b5a865fece4371777/hardware_boot_lock/boot_lock.c.obj	82b76ad579eb0b98
 1356	2272	7691933846677458	CMakeFiles/picow_access_point_background.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.obj	972b7e69359d1d0e
 4153	5625	7697560284276181	CMakeFiles/picow_access_point_background.dir/C_/Users/Wasley/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/def.c.obj	c492adeba102fd63
@@ -682,7 +682,7 @@
 3462	4286	7697560277371715	CMakeFiles/picow_access_point_background.dir/f28c238e21a8d7a415328780295072c0/src/rp2_common/hardware_pll/pll.c.obj	cad89a88a7097c98
 4071	4780	7697560283970395	CMakeFiles/picow_access_point_background.dir/68facaa553a6734d13687344bae9af44/rp2_common/hardware_xosc/xosc.c.obj	e917d2321be8db7a
 3356	4878	7697560276312620	CMakeFiles/picow_access_point_background.dir/68facaa553a6734d13687344bae9af44/rp2_common/hardware_gpio/gpio.c.obj	884f023fdfc9a52f
-59	2459	7697569569425152	build.ninja	4aa7d9dddb5051dd
+56	2587	7699099679807188	build.ninja	4aa7d9dddb5051dd
 6834	7949	7697560311290317	CMakeFiles/picow_access_point_background.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/autoip.c.obj	e92e98e0db5fc7b4
 7982	9753	7697560322700642	CMakeFiles/picow_access_point_background.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/ip4_frag.c.obj	664daaad6c4bd72f
 8771	10230	7697560330458175	CMakeFiles/picow_access_point_background.dir/f28c238e21a8d7a415328780295072c0/lib/lwip/src/core/ipv4/ip4_addr.c.obj	940fa785e91a494a
@@ -734,4 +734,5 @@
 214	1858	7697567433060681	CMakeFiles/picow_access_point_poll.dir/ssd1306_i2c.c.obj	5bfdc1a0aa222b0d
 451	1289	7692189240489668	CMakeFiles/picow_access_point_poll.dir/Wifi_Alarme.c.obj	a1dac937c26881a4
 172	1259	7692189237688627	CMakeFiles/picow_access_point_background.dir/Wifi_Alarme.c.obj	55e4ccc61be9f11e
-56	2587	7697569569425152	build.ninja	4aa7d9dddb5051dd
+273	2144	7699100566664707	CMakeFiles/picow_access_point_background.dir/picow_access_point.c.obj	27448c3b792d89a2
+2151	10604	7699100585430077	picow_access_point_background.elf	e4aa2b4bb6051254
