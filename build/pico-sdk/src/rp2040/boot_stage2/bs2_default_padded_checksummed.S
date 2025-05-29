@@ -1,4 +1,4 @@
-// Padded and checksummed version of: C:/Users/Wasley/Documents/CursoSistemasEmbarcados/Residência Embarcatech/Projetos BitDogLab/2°FASE RESIDENCIA/Wifi_BitDogLab/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: C:/Users/Wasley/Documents/CursoSistemasEmbarcados/Residencia Embarcatech/Projetos BitDogLab/2 FASE RESIDENCIA/Wifi_BitDogLab/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

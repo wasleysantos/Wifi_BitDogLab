@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/Wasley/Documents/CursoSistemasEmbarcados/Residência Embarcatech/Projetos BitDogLab/2°FASE RESIDENCIA/Wifi_BitDogLab/build/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/install_local_manifest.txt"
+  file(WRITE "C:/Users/Wasley/Documents/CursoSistemasEmbarcados/Residencia Embarcatech/Projetos BitDogLab/2 FASE RESIDENCIA/Wifi_BitDogLab/build/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
