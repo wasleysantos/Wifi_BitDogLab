@@ -1,4 +1,5 @@
 C:/Users/Wasley/Documents/CursoSistemasEmbarcados/Residencia Embarcatech/Projetos BitDogLab/2 FASE RESIDENCIA/Wifi_BitDogLab/build/CMakeFiles/picow_access_point_background.dir
+C:/Users/Wasley/Documents/CursoSistemasEmbarcados/Residencia Embarcatech/Projetos BitDogLab/2 FASE RESIDENCIA/Wifi_BitDogLab/build/CMakeFiles/picow_access_point_poll.dir
 C:/Users/Wasley/Documents/CursoSistemasEmbarcados/Residencia Embarcatech/Projetos BitDogLab/2 FASE RESIDENCIA/Wifi_BitDogLab/build/CMakeFiles/edit_cache.dir
 C:/Users/Wasley/Documents/CursoSistemasEmbarcados/Residencia Embarcatech/Projetos BitDogLab/2 FASE RESIDENCIA/Wifi_BitDogLab/build/CMakeFiles/rebuild_cache.dir
 C:/Users/Wasley/Documents/CursoSistemasEmbarcados/Residencia Embarcatech/Projetos BitDogLab/2 FASE RESIDENCIA/Wifi_BitDogLab/build/pico-sdk/CMakeFiles/edit_cache.dir
